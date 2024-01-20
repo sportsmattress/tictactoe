@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(234, 234, 234);
+    font-family: Poppins;
+}
+
+#container {
+    height: 400px;
+    width: 400px;
+    margin: 20px, auto;
+    display: grid;
+    grid-template-columns: repeat(3, 133px);
+    grid-template-rows: repeat(3, 133px);
+}
+
+.box {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-1, .box-2, .box-3 {
+    border-top: none;
+}
+
+.box-1, .box-4, .box-7 {
+    border-left: none;
+}
+
+.box-7, .box-8, .box-9 {
+    border-bottom: none;
+}
+
+.box-3, .box-6, .box-9 {
+    border-right: none;
+}
+
+#messageContainer {
+    margin-top: 20px;
+}
+
+#message {
+    font-size: 30px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin: 5px;
+}
+#nameContainer {
+    display: flex;
+    gap: 50px;
+    text-align: center;
+    margin: 10px;
+}
+
+#playerX, #playerO {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#keepScore {
+    display: flex;
+    gap: 100px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#player-1-score, #player-2-score {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#startBtn, #restartBtn {
+    padding: 20px;
+    margin: 20px;
+    font-family: Poppins;
+    background-color: rgb(234, 234, 234);
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+#startBtn:hover, #restartBtn:hover {
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
